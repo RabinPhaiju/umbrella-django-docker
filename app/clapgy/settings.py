@@ -30,6 +30,7 @@ INSTALLED_APPS = [
 
     "upload",
     "company",
+    "user_profile",
 ]
 
 MIDDLEWARE = [
@@ -116,6 +117,8 @@ USE_TZ = True
 
 # STATIC_URL = "/static/"
 STATIC_URL = "/staticfiles/"
+# override with custom user model
+AUTH_USER_MODEL ='user_profile.UserProfile'
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 MEDIA_URL = "/mediafiles/"
