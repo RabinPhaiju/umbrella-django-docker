@@ -1,7 +1,7 @@
-from .models import Daybook_type
+from .models import Daybook_order
 from rest_framework import serializers
 
-class Daybook_typeSerializer(serializers.ModelSerializer):
+class Daybook_orderSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Daybook_type
-        fields = ( 'name')
+        model = Daybook_order
+        fields = ( 's_price')
