@@ -30,6 +30,8 @@ INSTALLED_APPS = [
 
     "upload",
     "contrib.daybook",
+    "contrib.daybook_line",
+    "contrib.daybook_type",
     "contrib.company",
     "contrib.user",
     "contrib.partner",

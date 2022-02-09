@@ -8,17 +8,17 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('company', '0002_alter_company_id'),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Partner',
+            name='Daybook_line',
             fields=[
                 ('id', models.AutoField(primary_key=True, serialize=False)),
+                ('total', models.DecimalField(decimal_places=2, max_digits=10)),
+                ('date', models.DateTimeField(auto_now_add=True)),
                 ('created', models.DateTimeField(auto_now_add=True)),
                 ('updated', models.DateTimeField(auto_now=True)),
-                ('company', models.ManyToManyField(blank=True, to='company.Company')),
             ],
         ),
     ]

@@ -4,4 +4,4 @@ from rest_framework import serializers
 class DaybookSerializer(serializers.ModelSerializer):
     class Meta:
         model = Daybook
-        fields = ( 'month','name', 'company')
+        fields = ( 'name','user', 'company','month')

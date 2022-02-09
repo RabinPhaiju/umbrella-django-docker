@@ -6,8 +6,9 @@ from contrib.company.models import Company
 from contrib.user.models import UserProfile
 
 class Partner(models.Model):
+    id = models.AutoField(primary_key=True)
     user = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
-    company = models.ForeignKey(Company, on_delete=models.CASCADE)
+    company = models.ManyToManyField(Company, blank=True)
     
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
