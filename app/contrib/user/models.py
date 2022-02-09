@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import AbstractBaseUser
 from django.contrib.auth.models import PermissionsMixin
 from django.contrib.auth.models import BaseUserManager
+from contrib.company.models import Company
 
 # Override the default user model
 class UserProfileManager(BaseUserManager):
@@ -37,6 +38,7 @@ class UserProfile(AbstractBaseUser,PermissionsMixin):
     email=models.EmailField(max_length=255,unique=True)
     phone = models.IntegerField(default=0)
     image=models.CharField(max_length=255,default='default.jpg')
+    company = models.ForeignKey(Company,on_delete=models.CASCADE,null=True)
     
     is_active=models.BooleanField(default=True)
     is_staff=models.BooleanField(default=False)
