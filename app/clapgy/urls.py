@@ -8,6 +8,7 @@ urlpatterns = [
     path("upload/", include('upload.urls')),
     path("admin/", admin.site.urls),
     path("user/",include('contrib.user.urls')),
+    path("partner/",include('contrib.partner.urls')),
     path("company/",include('contrib.company.urls')),
     path("role/",include('contrib.role.urls')),
     path("daybook/",include('contrib.daybook.urls')),
