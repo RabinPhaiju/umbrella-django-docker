@@ -12,6 +12,7 @@ urlpatterns = [
     path("company/",include('contrib.company.urls')),
     path("role/",include('contrib.role.urls')),
     path("daybook/",include('contrib.daybook.urls')),
+    path("product/",include('contrib.product.urls')),
     path("daybook_line/",include('contrib.daybook_line.urls')),
     path("daybook_type/",include('contrib.daybook_type.urls')),
 ]

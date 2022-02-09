@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     "contrib.user",
     "contrib.partner",
     "contrib.role",
+    "contrib.product",
 ]
 
 MIDDLEWARE = [
