@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     "contrib.daybook",
     "contrib.company",
     "contrib.user",
+    "contrib.partner",
     "contrib.role",
 ]
 
