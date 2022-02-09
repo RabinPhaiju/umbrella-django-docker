@@ -29,8 +29,10 @@ INSTALLED_APPS = [
     "rest_framework",
 
     "upload",
-    "company",
-    "user_profile",
+    "contrib.daybook",
+    "contrib.company",
+    "contrib.user",
+    "contrib.role",
 ]
 
 MIDDLEWARE = [
@@ -118,7 +120,7 @@ USE_TZ = True
 # STATIC_URL = "/static/"
 STATIC_URL = "/staticfiles/"
 # override with custom user model
-AUTH_USER_MODEL ='user_profile.UserProfile'
+AUTH_USER_MODEL = "user.UserProfile"
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 MEDIA_URL = "/mediafiles/"

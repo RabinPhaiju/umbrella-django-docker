@@ -7,7 +7,9 @@ from django.conf.urls.static import static
 urlpatterns = [
     path("upload/", include('upload.urls')),
     path("admin/", admin.site.urls),
-    path("company/",include('company.urls')),
+    path("company/",include('contrib.company.urls')),
+    path("role/",include('contrib.role.urls')),
+    path("daybook/",include('contrib.daybook.urls')),
 ]
 
 if bool(settings.DEBUG):
