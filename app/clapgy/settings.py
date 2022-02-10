@@ -34,10 +34,10 @@ INSTALLED_APPS = [
     "contrib.daybook_type",
     "contrib.daybook_order",
     "contrib.company",
-    "contrib.user",
-    "contrib.partner",
     "contrib.role",
     "contrib.product",
+    "contrib.partner",
+    "contrib.user",
 ]
 
 MIDDLEWARE = [

@@ -59,6 +59,9 @@ migrate:
 migrations:
 	docker-compose exec web python manage.py makemigrations
 
+create-superuser:
+	docker-compose exec web python manage.py createsuperuser
+
 flush:
 	docker-compose exec web python manage.py flush --no-input
 
