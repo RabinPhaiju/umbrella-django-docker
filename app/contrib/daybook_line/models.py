@@ -9,7 +9,6 @@ class Daybook_line(models.Model):
     daybook = models.ForeignKey(Daybook, on_delete=models.CASCADE)
     partner = models.ForeignKey(Partner, on_delete=models.DO_NOTHING)
     daybook_type = models.ForeignKey(Daybook_type,on_delete=models.DO_NOTHING)
-    
     date = models.DateTimeField(auto_now_add=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
